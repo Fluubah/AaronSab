@@ -5,12 +5,56 @@
 
     </head>
 <style>
+            .nol{
+
+                transition: ease-in-out .2s;
+
+                text-decoration: none;
+                color: white;
+                background-color: aqua;
+                padding: 10px;
+            }
+            .nol:hover{
+                background-color: aquamarine;
+                font-size: 30px;
+                transition: ease-in-out .2s;
+            }
+            .m1{
+                margin: 20px;
+                text-decoration: none;
+                list-style-type: none;
+                display: inline-flex;
+                position: sticky;
+                color:white;
+                top: 0;
+                vertical-align:middle;
+                font-size:20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .m{
+                vertical-align: middle;
+                list-style-type: none;
+                width: 100%;
+                text-decoration: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline-flex;
+                background-image: url("https://tse3.mm.bing.net/th/id/OIP.3Btj1TjWIM8qfMnLdQrNwQHaE8?rs=1&pid=ImgDetMain");
+                background-attachment:fixed;
+                background-position: 0px;
+                padding: 0px;
+                position: sticky;
+                color:white;
+                top: 0;
+                font-size:20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
     .elements{
         font-size: 15px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         line-height: 30px;
     }
-    #title{
+    .div1{
         background-image: url("https://tse3.mm.bing.net/th/id/OIP.3Btj1TjWIM8qfMnLdQrNwQHaE8?rs=1&pid=ImgDetMain");
         background-attachment:fixed;
         background-position: 50px;
@@ -20,18 +64,32 @@
         top: 0;
         font-size:50px;
         font-family: 'Courier New', Courier, monospace;
+
+    }
+    .div2{
+        background-color: blueviolet;
     }
     .important{
         font-size: 25px;
         font-weight: bold;
+        position:static;
     }
     .almostimp{
+        position:static;
         font-size: 20px;
     }
 </style>
     <body class="elements">
-        <h1 id="title">Aaron Sabisch</h1>
+        <div class="m">
+            <ul class="m">
+                <li><h1 class="m1">Aaron Sabisch</h1></li>
+                <li>
+                <h1 class="m1"><b><a href="index.html"; class="nol">Internet Vocab</a></b></h1>
+                </li>
+            </ul>
+            </div>
         <ul>
+            <div class="div2">
             <li class="important">Employment and Volunteering History:</li>
             <ul class="almostimp">
                 <li>Yearly volunteer for neighborhood events</li>
@@ -43,6 +101,7 @@
                 <li>Volunteer for Elementary school carnival</li>
                 <li>Volunteer for park betterments</li>
             </ul>
+            </div>
             <li class="important">Education:</li>
                 <ol class="almostimp">
                     <li>Faith United Preschool</li>
