@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+
+    </head>
+<style>
+            .nol{
+
+                transition: ease-in-out .2s;
+
+                text-decoration: none;
+                color: white;
+                background-color: aqua;
+                padding: 10px;
+            }
+            .nol:hover{
+                background-color: aquamarine;
+                font-size: 30px;
+                transition: ease-in-out .2s;
+            }
+                        
+            .nola{
+
+                transition: ease-in-out .05s;
+
+                text-decoration: none;
+                color: white;
+                background-color: aqua;
+                padding: 10px;
+            }
+            .nola:hover{
+                background-color: rgb(0, 209, 209);
+                font-size: 25px;
+                transition: ease-in-out .05s;
+            }
+            .m1{
+                margin: 20px;
+                text-decoration: none;
+                list-style-type: none;
+                display: inline-flex;
+                position: sticky;
+                color:white;
+                top: 0;
+                vertical-align:middle;
+                font-size:20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .m{
+                vertical-align: middle;
+                list-style-type: none;
+                width: 100%;
+                text-decoration: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline-flex;
+                background-image: url("https://tse3.mm.bing.net/th/id/OIP.3Btj1TjWIM8qfMnLdQrNwQHaE8?rs=1&pid=ImgDetMain");
+                background-attachment:fixed;
+                background-position: 0px;
+                padding: 0px;
+                position: sticky;
+                color:white;
+                top: 0;
+                font-size:20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+    .elements{
+        font-weight: lighter;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
+    .div1{
+        background-image: url("https://tse3.mm.bing.net/th/id/OIP.3Btj1TjWIM8qfMnLdQrNwQHaE8?rs=1&pid=ImgDetMain");
+        background-attachment:fixed;
+        background-position: 50px;
+        padding: 20px;
+        position: sticky;
+        color:white;
+        top: 0;
+        font-size:50px;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+    .div2{
+        background-color: blueviolet;
+    }
+    .important{
+        font-size: 25px;
+        font-weight: bold;
+        position:static;
+    }
+    .almostimp{
+        position:static;
+        font-size: 20px;
+    }
+    .Projects{
+        width:100%;
+        background-color: brown;
+        display: flex;
+    }
+    .Project{
+        padding: 2%;
+        background-color: cadetblue;
+        margin: 2%;
+        width:50%;
+        height: 50%;
+    
+        display: flex;
+    }
+    .ProjectText{
+        width: 25%;
+    }
+    .ProjectVideo{
+        width: 75%;
+        left:50%;
+        
+    }
+    #video{
+        position: relative;
+        top: 10%;
+        left: 17%;
+    }
+    #links{
+        position: relative;
+        top: 15%;
+        text-align: center;
+    }
+    .photos{
+        background-color: turquoise;
+    }
+    .centered{
+        left: 50%;
+        width: fit-content;
+        margin: auto;
+    }
+    #boopis{
+        width: 25%;
+        height: 25%;
+    }
+</style>
+
+<body class="elements">
+    <div class="m">
+        <ul class="m">
+            <li><h1 class="m1">Aaron Sabisch</h1></li>
+            <li>
+            <h1 class="m1"><b><a href="index.html"; class="nol">Internet Vocab</a></b></h1>
+            <h1 class="m1"><b><a href="resume.html"; class="nol">Resume</a></b></h1>
+            <h1 class="m1"><b><a href="projects.html"; class="nol">Projects</a></b></h1>
+            <h1 class="m1"><b><a href="photo.html"; class="nol">Photo Gallery</a></b></h1>
+
+
+            </li>
+        </ul>
+        </div>
+        <hr>
+        <div class="photos">
+            <div class = "centered">
+                <button onclick=previousimage()><</button>
+                <button onclick=nextimage()>></button>
+                <br>
+                <img id='boopis' src="photo1.jpg">
+            </div>
+        </div>
+<script>
+const imageGallery = document.getElementById('boopis')
+
+
+const images = ['photo1.jpg','photo2.jpg']
+var imageIndex=0
+
+function nextimage(imageGallery) {
+    if(imageIndex < images.length-1){
+        imageIndex+=1
+    } else {
+        imageIndex =0
+    }
+    document.getElementById('boopis').src = images[imageIndex];
+}
+function previousimage(imageGallery) {
+    if(imageIndex > 0){
+        imageIndex-=1
+    } else {
+        imageIndex =images.length-1
+    }
+    document.getElementById('boopis').src = images[imageIndex];
+}
+</script>
+</body>
